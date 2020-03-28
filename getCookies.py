@@ -1,14 +1,13 @@
-from selenium import webdriver
 import time
 import json
-import myConfig
+from selenium import webdriver
 
 
 
 def get_cookies():
     #大马猴直播间
     browser = webdriver.Chrome()
-    url = "http://www.douyu.com/"+myConfig.ROOMNUM
+    url = "http://www.douyu.com/"
     browser.get(url)
     #在20秒内完成扫码登录，来获取Cookies
     #若未登录成功则启动失败
